@@ -7,16 +7,16 @@ startBtnEl.addEventListener('click', onStartBtn);
 let timerId = 0; // створюєм таймер
 
 function onStartBtn(evt) {
-  evt.target.disabled = true;
-  stopBtnEl.disabled = false;
+  evt.target.disabled = true; //откл
+  stopBtnEl.disabled = false; //вкл
 
   timerId = setInterval(() => {
     document.body.style.backgroundColor = getRandomHexColor();
   }, 1000);
 }
 function onStopBtn(evt) {
-  startBtnEl.disabled = false;
-  evt.target.disabled = true;
+  startBtnEl.disabled = false; //вкл
+  evt.target.disabled = true; //откл
 
   clearInterval(timerId);
 }
