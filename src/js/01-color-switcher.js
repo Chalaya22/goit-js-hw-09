@@ -4,7 +4,7 @@ const stopBtnEl = document.querySelector('[data-stop]');
 stopBtnEl.addEventListener('click', onStopBtn);
 startBtnEl.addEventListener('click', onStartBtn);
 
-let timerId = 0;
+let timerId = 0; // створюєм таймер
 
 function onStartBtn(evt) {
   evt.target.disabled = true;
